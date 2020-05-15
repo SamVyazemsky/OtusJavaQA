@@ -15,18 +15,18 @@ public class TestLocators extends TestBase {
         WebElement link = driver.findElement(By.linkText("learning/"));
         link.click();
 
-        WebElement form2 = driver.findElement(By.tagName("select"));
+        WebElement ZhannaHW2 = driver.findElement(By.tagName("select"));
         form2.click();
 
         WebElement choose = driver.findElement(By.cssSelector(""));
 
-        WebElement form1 = driver.findElement(By.id("login-form"));
-        WebElement form3 = driver.findElement(By.className("login"));
-        WebElement form4 = driver.findElement(By.cssSelector("form.login"));
-        WebElement form5 = driver.findElement(By.cssSelector("#login-form"));
+        WebElement ZhannaHW1 = driver.findElement(By.id("login-form"));
+        WebElement ZhannaHW3 = driver.findElement(By.className("login"));
+        WebElement ZhannaHW4 = driver.findElement(By.cssSelector("form.login"));
+        WebElement ZhannaHW5 = driver.findElement(By.cssSelector("#login-form"));
 
-        WebElement field1 = driver.findElement(By.name("username"));
-        WebElement field2 = driver.findElement(By.xpath("//input[@name='username']"));
+        WebElement ZhannaField1 = driver.findElement(By.name("username"));
+        WebElement ZhannaField2 = driver.findElement(By.xpath("//input[@name='username']"));
 
 
         List<WebElement> links = driver.findElements(By.tagName("select"));
