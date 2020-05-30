@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.OtusActions;
 public class OtusActions {
 
     @Test
-    public void testOtusTakeScreenshot() throws Exception{
+    public void testOtusActions() throws Exception{
 
         WebDriver driver;
         driver = new FirefoxDriver();

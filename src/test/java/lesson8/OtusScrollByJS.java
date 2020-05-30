@@ -24,6 +24,7 @@ public class OtusScrollByJS {
         		
         //Vertical scroll down by 600  pixels		
         js.executeScript("window.scrollBy(0,600)");	
+        // Refresh window
         js.executeScript("document.location.reload(true);")
         //quit driver		
         driver.quit();

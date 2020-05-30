@@ -18,7 +18,7 @@ public class OtusActions {
         driver.get("http://jqueryui.com/datepicker/");
         driver.SwitchTo().Frame(
             driver.FindElement(By.CssSelector("iframe.demo-frame")));
-        SetDatepicker(driver, "#datepicker", "02/20/2002");
+        SetDatepicker(driver, "#datepicker", "02/20/2022");
         driver.quit();
 
     public void setDatepicker(WebDriver driver, String cssSelector, String date) {
@@ -26,6 +26,8 @@ public class OtusActions {
         (WebDriver d) -> d.findElement(By.cssSelector(cssSelector)).isDisplayed());
       JavascriptExecutor.class.cast(driver).executeScript(
         String.format("$('%s').datepicker('setDate', '%s')", cssSelector, date));
+      WebElement el = JavascriptExecutor(driver, '$("#myid")');
+      
 }
 
 }
