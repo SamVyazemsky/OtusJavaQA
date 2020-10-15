@@ -14,6 +14,7 @@ pipeline {
     stages{
         stage('Pull from GitHub'){
             steps{
+                slackSend(message: "Hello, we are on lesson!")
                 git 'https://github.com/SamVyazemsky/OtusJavaQA'
             }
         }
